@@ -11,7 +11,7 @@ export default function Countdown() {
   });
 
   useEffect(() => {
-    const targetDate = new Date("2025-08-09T09:00:00+07:00").getTime();
+    const targetDate = new Date("2027-01-31T09:00:00+07:00").getTime();
 
     const calculateTime = () => {
       const now = new Date().getTime();
@@ -46,12 +46,12 @@ export default function Countdown() {
       {items.map((item, idx) => (
         <div
           key={idx}
-          className="bg-[#F2E9FA]/90 backdrop-blur-sm border border-[#FFE3E2] rounded-2xl p-2.5 text-center shadow-sm"
+          className="bg-[#F9E6A8]/90 backdrop-blur-sm border border-[#F4D375] rounded-2xl p-2.5 text-center shadow-sm"
         >
-          <span className="block font-serif text-2xl font-bold text-[#4A3B4E] leading-none">
+          <span className="block font-serif text-2xl font-bold text-[#4D2A00] leading-none">
             {String(item.value).padStart(2, "0")}
           </span>
-          <span className="text-[10px] uppercase tracking-wider text-[#79687E] mt-1.5 block font-medium">
+          <span className="text-[10px] uppercase tracking-wider text-[#7A5424] mt-1.5 block font-medium">
             {item.label}
           </span>
         </div>

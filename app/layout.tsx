@@ -21,8 +21,8 @@ const cormorant = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "The Wedding of Audi & Chris",
-  description: "Undangan Pernikahan Audi & Chris - 9 Agustus 2025",
+  title: "The Wedding of Yuvan & Safira",
+  description: "Undangan Pernikahan Yuvan & Safira - 31 Januari 2027",
 };
 
 export default function RootLayout({
@@ -35,7 +35,7 @@ export default function RootLayout({
       lang="id"
       className={`${southernAire.variable} ${nightStillComes.variable} ${cormorant.variable}`}
     >
-      <body className="bg-[#1e1822] text-[#4A3B4E] antialiased selection:bg-[#C4B3D3] selection:text-[#4A3B4E]">
+      <body className="bg-[#1E1202] text-[#4D2A00] antialiased selection:bg-[#F2A900] selection:text-[#4D2A00]">
         {children}
       </body>
     </html>

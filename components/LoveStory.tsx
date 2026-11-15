@@ -17,23 +17,23 @@ const stories: StoryItem[] = [
   {
     id: 1,
     title: "Awal Bertemu",
-    date: "Tahun 2006",
+    date: "Lorem Ipsum",
     content:
-      "Pada tahun 2006, di ruang kelas TK yang dipenuhi tawa dan keceriaan, kami pertama kali bertemu, tanpa sadar bahwa pertemuan sederhana itu akan menjadi benih dari kisah cinta yang tertunda namun abadi. Walau waktu membawa kami berpisah, rasa itu tetap tertanam dalam hati, menunggu saatnya untuk kembali terungkap.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
     id: 2,
     title: "Lamaran",
-    date: "19 November 2023",
+    date: "31 Oktober 2026",
     content:
-      "Setelah bertahun-tahun jarak memisahkan, pada 19 November 2023, dengan penuh rasa cinta dan komitmen, Mas Yoga datang melamar. Saat itu, haru dan kebahagiaan menyelimuti kami, mengukuhkan cinta yang semakin dalam, penuh harapan, dan janji yang takkan pernah pudar.",
+      "Pada 31 Oktober 2026, dengan penuh rasa cinta dan komitmen, Yuvan melamar Safira. Hari bahagia yang penuh haru dan syukur mengukuhkan langkah kami untuk melangkah menuju ikatan suci pernikahan.",
   },
   {
     id: 3,
     title: "Menikah",
-    date: "9 Agustus 2025",
+    date: "31 Januari 2027",
     content:
-      "Pada 9 Agustus 2025, setelah melewati berbagai ujian, terutama jarak yang memisahkan kami, perjalanan cinta kami mencapai titik puncak yang begitu indah. Dengan izin Allah SWT, kami melangkah bersama, membangun kehidupan baru sebagai suami dan istri, mengukir kebahagiaan yang tak terhingga.",
+      "Pada 31 Januari 2027, dengan izin dan rahmat Allah SWT, kami melangkah bersama membangun bahtera rumah tangga sebagai suami dan istri, menyatukan cinta dan doa dalam ikatan suci pernikahan.",
   },
 ];
 
@@ -45,7 +45,7 @@ export default function LoveStory() {
   };
 
   return (
-    <section className="relative px-6 py-12 text-center overflow-hidden bg-[#FBEFEF]">
+    <section className="relative px-6 py-12 text-center overflow-hidden bg-[#FFFDF6]">
       <RevealOnScroll direction="down" delay={0.1}>
         <div className="flex justify-center mb-2">
           <Image
@@ -57,13 +57,13 @@ export default function LoveStory() {
             unoptimized
           />
         </div>
-        <span className="text-[11px] uppercase tracking-[0.25em] text-[#79687E] font-semibold">
+        <span className="text-[11px] uppercase tracking-[0.25em] text-[#7A5424] font-semibold">
           Our Journey
         </span>
-        <h2 className="font-serif text-2xl font-bold text-[#4A3B4E] mt-1 mb-2">
+        <h2 className="font-serif text-2xl font-bold text-[#4D2A00] mt-1 mb-2">
           Love Story
         </h2>
-        <p className="text-xs italic text-[#79687E] max-w-[280px] mx-auto mb-8">
+        <p className="text-xs italic text-[#7A5424] max-w-[280px] mx-auto mb-8">
           &ldquo;Datangnya cinta adalah takdir, dia datang tak pernah terduga&rdquo;
         </p>
       </RevealOnScroll>
@@ -74,7 +74,7 @@ export default function LoveStory() {
           const isOpen = activeId === story.id;
           return (
             <RevealOnScroll key={story.id} direction="up" delay={0.2 + idx * 0.1}>
-              <div className="bg-[#F2E9FA]/90 backdrop-blur-sm rounded-2xl border border-[#FFE3E2] overflow-hidden shadow-sm transition-all duration-300">
+              <div className="bg-[#F9E6A8]/90 backdrop-blur-sm rounded-2xl border border-[#F4D375] overflow-hidden shadow-sm transition-all duration-300">
                 <button
                   onClick={() => toggle(story.id)}
                   className="w-full px-5 py-4 flex items-center justify-between text-left group cursor-pointer"
@@ -82,21 +82,21 @@ export default function LoveStory() {
                   <div className="flex items-center gap-2.5">
                     <Heart
                       className={`w-4 h-4 transition-colors ${
-                        isOpen ? "text-[#C4B3D3] fill-[#C4B3D3]" : "text-[#79687E]/50"
+                        isOpen ? "text-[#F2A900] fill-[#F2A900]" : "text-[#7A5424]/50"
                       }`}
                     />
                     <div>
-                      <h3 className="font-serif text-sm font-bold text-[#4A3B4E] group-hover:text-[#5F4B66] transition-colors">
+                      <h3 className="font-serif text-sm font-bold text-[#4D2A00] group-hover:text-[#664010] transition-colors">
                         {story.title}
                       </h3>
-                      <span className="text-[10px] text-[#79687E] block">
+                      <span className="text-[10px] text-[#7A5424] block">
                         {story.date}
                       </span>
                     </div>
                   </div>
                   <ChevronDown
-                    className={`w-4 h-4 text-[#79687E] transition-transform duration-300 ${
-                      isOpen ? "rotate-180 text-[#4A3B4E]" : ""
+                    className={`w-4 h-4 text-[#7A5424] transition-transform duration-300 ${
+                      isOpen ? "rotate-180 text-[#4D2A00]" : ""
                     }`}
                   />
                 </button>
@@ -109,7 +109,7 @@ export default function LoveStory() {
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.35, ease: "easeInOut" }}
                     >
-                      <div className="px-5 pb-5 pt-1 text-xs text-[#5F4B66] leading-relaxed border-t border-[#FFE3E2]">
+                      <div className="px-5 pb-5 pt-1 text-xs text-[#664010] leading-relaxed border-t border-[#F4D375]">
                         {story.content}
                       </div>
                     </motion.div>

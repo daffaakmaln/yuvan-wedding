@@ -24,69 +24,62 @@ function InstagramIcon({ className = "w-3.5 h-3.5" }: { className?: string }) {
 
 export default function CoupleSection() {
   return (
-    <section id="couple" className="relative px-6 py-12 text-center overflow-hidden bg-[#FBEFEF]">
-      {/* Background floral decoration kiri */}
-      <div className="absolute top-10 -left-12 w-36 pointer-events-none opacity-40">
-        <Image
-          src="/2025/07/Florist-08-Mempelai-Kiri1-768x1068.png"
-          alt="Bunga Kiri"
-          width={180}
-          height={260}
-          className="object-contain"
-        />
-      </div>
-
-      {/* Background floral decoration kanan */}
-      <div className="absolute bottom-10 -right-12 w-36 pointer-events-none opacity-40">
-        <Image
-          src="/2025/07/Florist-08-Mempelai-Kanan-768x1068.png"
-          alt="Bunga Kanan"
-          width={180}
-          height={260}
-          className="object-contain"
-        />
-      </div>
-
+    <section
+      id="couple"
+      className="relative px-6 py-12 text-center overflow-hidden bg-[#FFFDF6]"
+    >
       <RevealOnScroll direction="down" delay={0.1}>
-        <span className="text-[11px] uppercase tracking-[0.25em] text-[#79687E] font-semibold">
-          Mempelai Wanita & Pria
+        <span className="text-[11px] uppercase tracking-[0.25em] text-[#7A5424] font-semibold">
+          Mempelai Pria & Wanita
         </span>
-        <h2 className="font-serif text-2xl font-bold text-[#4A3B4E] mt-1 mb-8">
+        <h2 className="font-serif text-2xl font-bold text-[#4D2A00] mt-1 mb-8">
           Pasangan Mempelai
         </h2>
       </RevealOnScroll>
 
-      {/* Bride (Audi) */}
-      <div className="relative z-10 max-w-[340px] mx-auto mb-10">
+      {/* Groom (Yuvan) */}
+      <div className="relative z-10 max-w-[360px] mx-auto mb-10">
         <RevealOnScroll direction="zoom" delay={0.2}>
-          <div className="relative w-44 h-56 mx-auto mb-4 rounded-[40px] overflow-hidden border-4 border-white shadow-xl ring-2 ring-[#C4B3D3]/60">
-            <Image
-              src="/2025/07/Audi-Chris-10.jpg"
-              alt="Audita Meivina"
-              fill
-              className="object-cover object-center"
-            />
+          {/* Background Avatar full width & height */}
+          <div className="relative w-full mb-4">
+            <div className="relative w-full aspect-[2/3] rounded-[44px] overflow-hidden shadow-xl ring-2 ring-[#F2A900]/60">
+              {/* BG Avatar full cover */}
+              <Image
+                src="/new_photos/bg_avatar_pria.png"
+                alt="Background Avatar Yuvan"
+                fill
+                sizes="(max-width: 480px) 100vw, 360px"
+                className="object-cover object-center"
+              />
+              {/* Top gradient fade-out (#FFFDF6) */}
+              <div className="absolute top-0 inset-x-0 h-20 bg-gradient-to-b from-[#FFFDF6] via-[#FFFDF6]/50 to-transparent z-10" />
+              {/* Bottom awan / soft cloud */}
+              <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-white via-white/70 to-transparent z-10" />
+            </div>
           </div>
         </RevealOnScroll>
 
         <RevealOnScroll direction="up" delay={0.3}>
-          <h3 className="font-script text-4xl text-[#4A3B4E] mb-1">Audi</h3>
-          <h4 className="font-subtitle text-lg font-bold text-[#3B2C3F]">
-            Audita Meivina
+          <h3 className="font-script text-4xl text-[#4D2A00] mb-1">Yuvan</h3>
+          <h4 className="font-subtitle text-lg font-bold text-[#3D2100]">
+            Yuvan Adika Putra
           </h4>
-          <p className="text-xs text-[#79687E] mt-2 leading-relaxed">
-            Putri Kedua dari <br />
-            <strong className="text-[#4A3B4E]">Bapak Gatot Hariono</strong> & <strong className="text-[#4A3B4E]">Ibu Reny Linawati</strong>
+          <p className="text-xs text-[#7A5424] mt-2 leading-relaxed">
+            Putra dari <br />
+            <strong className="text-[#4D2A00]">
+              Bapak Budi Laksana
+            </strong> &{" "}
+            <strong className="text-[#4D2A00]">Ibu Rini Asih</strong>
           </p>
 
           <a
-            href="https://www.instagram.com/audiputrihariono"
+            href="https://www.instagram.com/yuvan_adika"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 mt-3 px-3.5 py-1.5 bg-[#F2E9FA] border border-[#C4B3D3]/50 rounded-full text-xs font-medium text-[#4A3B4E] hover:bg-[#C4B3D3] hover:text-[#2E1E33] transition-colors shadow-sm"
+            className="inline-flex items-center gap-1.5 mt-3 px-3.5 py-1.5 bg-[#F9E6A8] border border-[#F2A900]/50 rounded-full text-xs font-medium text-[#4D2A00] hover:bg-[#F2A900] hover:text-[#2B1700] transition-colors shadow-sm"
           >
             <InstagramIcon className="w-3.5 h-3.5" />
-            <span>@audiputrihariono</span>
+            <span>@yuvan_adika</span>
           </a>
         </RevealOnScroll>
       </div>
@@ -102,41 +95,56 @@ export default function CoupleSection() {
             className="w-14 h-14 object-contain drop-shadow"
             unoptimized
           />
-          <span className="font-script text-4xl text-[#C4B3D3] -mt-2">&</span>
+          <span className="font-script text-4xl text-[#F2A900] -mt-2">&</span>
         </div>
       </RevealOnScroll>
 
-      {/* Groom (Chris) */}
-      <div className="relative z-10 max-w-[340px] mx-auto">
+      {/* Bride (Safira) */}
+      <div className="relative z-10 max-w-[360px] mx-auto">
         <RevealOnScroll direction="zoom" delay={0.2}>
-          <div className="relative w-44 h-56 mx-auto mb-4 rounded-[40px] overflow-hidden border-4 border-white shadow-xl ring-2 ring-[#C4B3D3]/60">
-            <Image
-              src="/2025/07/Audi-Chris-9.jpg"
-              alt="Chrisananta Yoga Saputra"
-              fill
-              className="object-cover object-center"
-            />
+          {/* Background Avatar full width & height */}
+          <div className="relative w-full mb-4">
+            <div className="relative w-full aspect-[2/3] rounded-[44px] overflow-hidden shadow-xl ring-2 ring-[#F2A900]/60">
+              {/* BG Avatar full cover */}
+              <Image
+                src="/new_photos/bg_avatar_wanita.png"
+                alt="Background Avatar Safira"
+                fill
+                sizes="(max-width: 480px) 100vw, 360px"
+                className="object-cover object-center"
+              />
+              {/* Top gradient fade-out (#FFFDF6) */}
+              <div className="absolute top-0 inset-x-0 h-20 bg-gradient-to-b from-[#FFFDF6] via-[#FFFDF6]/50 to-transparent z-10" />
+              {/* Bottom awan / soft cloud */}
+              <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-white via-white/70 to-transparent z-10" />
+            </div>
           </div>
         </RevealOnScroll>
 
         <RevealOnScroll direction="up" delay={0.3}>
-          <h3 className="font-script text-4xl text-[#4A3B4E] mb-1">Chris</h3>
-          <h4 className="font-subtitle text-lg font-bold text-[#3B2C3F]">
-            Chrisananta Yoga Saputra
+          <h3 className="font-script text-4xl text-[#4D2A00] mb-1">Safira</h3>
+          <h4 className="font-subtitle text-lg font-bold text-[#3D2100]">
+            Safira Tiara Putri
           </h4>
-          <p className="text-xs text-[#79687E] mt-2 leading-relaxed">
-            Putra Ketiga dari <br />
-            <strong className="text-[#4A3B4E]">Bapak Hadi Sutrisno</strong> & <strong className="text-[#4A3B4E]">Ibu Sri Hartuti</strong>
+          <p className="text-xs text-[#7A5424] mt-2 leading-relaxed">
+            Putri dari <br />
+            <strong className="text-[#4D2A00]">
+              Bapak Bambang Irianto (Alm.)
+            </strong>{" "}
+            &{" "}
+            <strong className="text-[#4D2A00]">
+              Ibu Elok Dwi Puji Rahajoe
+            </strong>
           </p>
 
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/safiratiara_"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 mt-3 px-3.5 py-1.5 bg-[#F2E9FA] border border-[#C4B3D3]/50 rounded-full text-xs font-medium text-[#4A3B4E] hover:bg-[#C4B3D3] hover:text-[#2E1E33] transition-colors shadow-sm"
+            className="inline-flex items-center gap-1.5 mt-3 px-3.5 py-1.5 bg-[#F9E6A8] border border-[#F2A900]/50 rounded-full text-xs font-medium text-[#4D2A00] hover:bg-[#F2A900] hover:text-[#2B1700] transition-colors shadow-sm"
           >
             <InstagramIcon className="w-3.5 h-3.5" />
-            <span>@chrisananta</span>
+            <span>@safiratiara_</span>
           </a>
         </RevealOnScroll>
       </div>

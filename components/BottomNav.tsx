@@ -52,7 +52,7 @@ export default function BottomNav() {
   }, []);
 
   return (
-    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] z-40 bg-[#FBEFEF]/95 backdrop-blur-md border-t border-[#F5CBCC]/60 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] px-2 py-2">
+    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] z-40 bg-[#FFFDF6]/95 backdrop-blur-md border-t border-[#E0BD50]/60 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] px-2 py-2">
       <div className="grid grid-cols-5 items-center">
         {navItems.map((item) => {
           const isActive = activeTab === item.id;
@@ -62,13 +62,13 @@ export default function BottomNav() {
               onClick={() => scrollToSection(item.id)}
               className={`flex flex-col items-center justify-center py-1 rounded-xl transition-all duration-200 cursor-pointer ${
                 isActive
-                  ? "text-[#4A3B4E] font-bold scale-105"
-                  : "text-[#79687E] hover:text-[#4A3B4E]"
+                  ? "text-[#4D2A00] font-bold scale-105"
+                  : "text-[#7A5424] hover:text-[#4D2A00]"
               }`}
             >
               <div
                 className={`p-1 rounded-lg transition-colors ${
-                  isActive ? "bg-[#C4B3D3]/40 text-[#4A3B4E]" : ""
+                  isActive ? "bg-[#F2A900]/40 text-[#4D2A00]" : ""
                 }`}
               >
                 {item.icon}

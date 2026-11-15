@@ -2,22 +2,23 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { X, ChevronLeft, ChevronRight, Play } from "lucide-react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import RevealOnScroll from "./RevealOnScroll";
 
 const galleryImages = [
-  "/2025/07/Audi-Chris-1.jpg",
-  "/2025/07/Audi-Chris-2.jpg",
-  "/2025/07/Audi-Chris-3.jpg",
-  "/2025/07/Audi-Chris-4.jpg",
-  "/2025/07/Audi-Chris-5.jpg",
-  "/2025/07/Audi-Chris-6.jpg",
-  "/2025/07/Audi-Chris-7.jpg",
-  "/2025/07/Audi-Chris-8-768x1151.jpg",
-  "/2025/07/Audi-Chris-11.jpg",
-  "/2025/07/Audi-Chris-12.jpg",
-  "/2025/07/Audi-Chris-13.jpg",
+  "/new_photos/1.jpg",
+  "/new_photos/2.jpg",
+  "/new_photos/3.jpg",
+  "/new_photos/4.jpg",
+  "/new_photos/5.jpg",
+  "/new_photos/6.jpg",
+  "/new_photos/7.jpg",
+  "/new_photos/8.jpg",
+  "/new_photos/9.jpg",
+  "/new_photos/10.jpg",
+  "/new_photos/11.jpg",
+  "/new_photos/12.jpg",
 ];
 
 export default function GallerySection() {
@@ -41,30 +42,17 @@ export default function GallerySection() {
   };
 
   return (
-    <section className="relative px-6 py-12 text-center overflow-hidden bg-[#FBEFEF]">
+    <section className="relative px-6 py-12 text-center overflow-hidden bg-[#FFFDF6]">
       <RevealOnScroll direction="down" delay={0.1}>
-        <span className="text-[11px] uppercase tracking-[0.25em] text-[#79687E] font-semibold">
+        <span className="text-[11px] uppercase tracking-[0.25em] text-[#7A5424] font-semibold">
           Momen Bahagia
         </span>
-        <h2 className="font-serif text-2xl font-bold text-[#4A3B4E] mt-1 mb-2">
+        <h2 className="font-serif text-2xl font-bold text-[#4D2A00] mt-1 mb-2">
           Our Gallery
         </h2>
-        <p className="text-xs italic text-[#79687E] max-w-[280px] mx-auto mb-8">
+        <p className="text-xs italic text-[#7A5424] max-w-[280px] mx-auto mb-8">
           &ldquo;Loved you yesterday, love you still, always have, always will.&rdquo;
         </p>
-      </RevealOnScroll>
-
-      {/* YouTube Video Teaser */}
-      <RevealOnScroll direction="zoom" delay={0.2} className="mb-8">
-        <div className="max-w-[360px] mx-auto rounded-3xl overflow-hidden shadow-xl border-2 border-[#FFE3E2] ring-2 ring-[#C4B3D3]/40 aspect-video bg-black relative">
-          <iframe
-            src="https://www.youtube.com/embed/6PAVVBRa2WI"
-            title="Prewedding Teaser Audi & Chris"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            className="w-full h-full border-0"
-          />
-        </div>
       </RevealOnScroll>
 
       {/* Photo Grid */}
@@ -78,18 +66,15 @@ export default function GallerySection() {
           >
             <div
               onClick={() => openLightbox(idx)}
-              className="relative w-full h-full rounded-2xl overflow-hidden shadow-md group cursor-pointer border-2 border-white ring-1 ring-[#FFE3E2]"
+              className="relative w-full h-full rounded-2xl overflow-hidden shadow-md group cursor-pointer border-2 border-white ring-1 ring-[#F4D375]"
             >
               <Image
                 src={src}
-                alt={`Prewedding Audi & Chris ${idx + 1}`}
+                alt={`Prewedding Yuvan & Safira ${idx + 1}`}
                 fill
                 sizes="(max-width: 500px) 50vw, 250px"
                 className="object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-[#4A3B4E]/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white">
-                <Play className="w-6 h-6 fill-white opacity-90" />
-              </div>
             </div>
           </RevealOnScroll>
         ))}
@@ -103,7 +88,7 @@ export default function GallerySection() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={closeLightbox}
-            className="fixed inset-0 z-50 bg-[#1e1822]/90 flex items-center justify-center p-4 backdrop-blur-md"
+            className="fixed inset-0 z-50 bg-[#1E1202]/90 flex items-center justify-center p-4 backdrop-blur-md"
           >
             <button
               onClick={closeLightbox}
@@ -132,6 +117,7 @@ export default function GallerySection() {
                 src={galleryImages[lightboxIndex]}
                 alt="Enlarged photo"
                 fill
+                sizes="(max-width: 500px) 100vw, 420px"
                 className="object-contain"
               />
             </motion.div>

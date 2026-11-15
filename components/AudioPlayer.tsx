@@ -28,8 +28,8 @@ export default function AudioPlayer({ isPlaying, onToggle }: AudioPlayerProps) {
         aria-label="Toggle Audio"
         className={`fixed z-40 bottom-20 right-6 md:right-[calc(50%-220px)] w-11 h-11 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 ${
           isPlaying
-            ? "bg-[#C4B3D3] text-[#2E1E33] ring-4 ring-[#C4B3D3]/40 animate-[spin_6s_linear_infinite]"
-            : "bg-white/95 text-[#4A3B4E] ring-2 ring-[#FFE3E2]"
+            ? "bg-[#F2A900] text-[#2B1700] ring-4 ring-[#F2A900]/40 animate-[spin_6s_linear_infinite]"
+            : "bg-white/95 text-[#4D2A00] ring-2 ring-[#F4D375]"
         }`}
       >
         {isPlaying ? (

@@ -7,7 +7,7 @@ import Countdown from "./Countdown";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative px-6 py-16 text-center overflow-hidden bg-[#FBEFEF]">
+    <section id="home" className="relative px-6 py-16 text-center overflow-hidden bg-[#FFFDF6]">
       {/* Top chandelier ornament */}
       <RevealOnScroll direction="down" delay={0.1}>
         <div className="flex justify-center mb-4">
@@ -23,10 +23,10 @@ export default function HeroSection() {
 
       {/* Greeting text */}
       <RevealOnScroll direction="zoom" delay={0.2}>
-        <p className="font-serif italic text-sm text-[#4A3B4E] mb-2 font-semibold tracking-wide">
+        <p className="font-serif italic text-sm text-[#4D2A00] mb-2 font-semibold tracking-wide">
           Assalamu’alaikum Warahmatullahi Wabarakatuh
         </p>
-        <p className="text-xs text-[#79687E] leading-relaxed max-w-[340px] mx-auto mb-6">
+        <p className="text-xs text-[#7A5424] leading-relaxed max-w-[340px] mx-auto mb-6">
           Dengan memohon rahmat dan ridho Allah SWT, Kami Mengundang
           Bapak/Ibu/Saudara/i, untuk menghadiri acara pernikahan kami:
         </p>
@@ -34,11 +34,11 @@ export default function HeroSection() {
 
       {/* Big Title */}
       <RevealOnScroll direction="up" delay={0.3}>
-        <h1 className="font-script text-6xl text-[#4A3B4E] my-2 drop-shadow-sm">
-          Audi & Chris
+        <h1 className="font-script text-6xl text-[#4D2A00] my-2 drop-shadow-sm">
+          Yuvan & Safira
         </h1>
-        <p className="font-subtitle text-base text-[#5F4B66] tracking-wider font-semibold">
-          Sabtu, 9 Agustus 2025
+        <p className="font-subtitle text-base text-[#664010] tracking-wider font-semibold">
+          Minggu, 31 Januari 2027
         </p>
       </RevealOnScroll>
 

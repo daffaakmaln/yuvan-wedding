@@ -38,20 +38,21 @@ function InvitationContent() {
   };
 
   return (
-    <main className="min-h-screen w-full flex justify-center bg-[#1e1822] relative">
+    <main className="min-h-screen w-full flex justify-center bg-[#1E1202] relative">
       {/* Desktop blurred backdrop with soft tint */}
       <div className="fixed inset-0 z-0 opacity-25 hidden md:block pointer-events-none">
         <Image
-          src="/2025/07/Sampul-Tema-Florist-08-1-scaled.jpg"
+          src="/new_photos/1.jpg"
           alt="Desktop Background"
           fill
+          sizes="100vw"
           className="object-cover blur-2xl"
         />
-        <div className="absolute inset-0 bg-[#C4B3D3]/20 mix-blend-color" />
+        <div className="absolute inset-0 bg-[#F2A900]/20 mix-blend-color" />
       </div>
 
-      {/* Main mobile viewport container (max 480px, #FBEFEF base) */}
-      <div className="relative z-10 w-full max-w-[480px] min-h-screen bg-[#FBEFEF] text-[#4A3B4E] shadow-2xl overflow-x-hidden border-x border-[#F5CBCC]/50">
+      {/* Main mobile viewport container (max 480px, #FFFDF6 base) */}
+      <div className="relative z-10 w-full max-w-[480px] min-h-screen bg-[#FFFDF6] text-[#4D2A00] shadow-2xl overflow-x-hidden border-x border-[#E0BD50]/50">
         {/* Cover Screen */}
         <CoverModal
           isOpen={isOpened}
@@ -69,7 +70,7 @@ function InvitationContent() {
 
         {/* Invitation Content Sections */}
         {isOpened && (
-          <div className="divide-y divide-[#F5CBCC]/40 pb-16">
+          <div className="divide-y divide-[#E0BD50]/40 pb-16">
             <HeroSection />
             <CoupleSection />
             <EventSection />
@@ -87,7 +88,7 @@ function InvitationContent() {
 
 export default function Page() {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-[#1e1822]" />}>
+    <Suspense fallback={<div className="min-h-screen bg-[#1E1202]" />}>
       <InvitationContent />
     </Suspense>
   );
