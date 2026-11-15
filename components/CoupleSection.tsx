@@ -28,15 +28,6 @@ export default function CoupleSection() {
       id="couple"
       className="relative px-6 py-12 text-center overflow-hidden bg-[#FFFDF6]"
     >
-      <RevealOnScroll direction="down" delay={0.1}>
-        <span className="text-[11px] uppercase tracking-[0.25em] text-[#7A5424] font-semibold">
-          Mempelai Pria & Wanita
-        </span>
-        <h2 className="font-serif text-2xl font-bold text-[#4D2A00] mt-1 mb-8">
-          Pasangan Mempelai
-        </h2>
-      </RevealOnScroll>
-
       {/* Groom (Yuvan) */}
       <div className="relative z-10 max-w-[360px] mx-auto mb-10">
         <RevealOnScroll direction="zoom" delay={0.2}>
@@ -62,14 +53,14 @@ export default function CoupleSection() {
         <RevealOnScroll direction="up" delay={0.3}>
           <h3 className="font-script text-4xl text-[#4D2A00] mb-1">Yuvan</h3>
           <h4 className="font-subtitle text-lg font-bold text-[#3D2100]">
-            Yuvan Adika Putra
+            Yuvan Adika Putra, S.Pd
           </h4>
           <p className="text-xs text-[#7A5424] mt-2 leading-relaxed">
             Putra dari <br />
-            <strong className="text-[#4D2A00]">
-              Bapak Budi Laksana
-            </strong> &{" "}
-            <strong className="text-[#4D2A00]">Ibu Rini Asih</strong>
+            <strong className="text-[#4D2A00]">Budi Laksana, S.E</strong> &{" "}
+            <strong className="text-[#4D2A00]">Rini Asih</strong>
+            <br />
+            <span className="text-[#CC6F00] font-medium">Kediri</span>
           </p>
 
           <a
@@ -124,17 +115,19 @@ export default function CoupleSection() {
         <RevealOnScroll direction="up" delay={0.3}>
           <h3 className="font-script text-4xl text-[#4D2A00] mb-1">Safira</h3>
           <h4 className="font-subtitle text-lg font-bold text-[#3D2100]">
-            Safira Tiara Putri
+            Safira Tiara Putri, S.H
           </h4>
           <p className="text-xs text-[#7A5424] mt-2 leading-relaxed">
             Putri dari <br />
             <strong className="text-[#4D2A00]">
-              Bapak Bambang Irianto (Alm.)
+              Alm. Bambang Irianto, S.E
             </strong>{" "}
             &{" "}
             <strong className="text-[#4D2A00]">
-              Ibu Elok Dwi Puji Rahajoe
+              Rr. Elok Dwi Pudjirahajoe, S.H
             </strong>
+            <br />
+            <span className="text-[#CC6F00] font-medium">Gresik</span>
           </p>
 
           <a

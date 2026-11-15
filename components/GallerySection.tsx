@@ -30,7 +30,9 @@ export default function GallerySection() {
   const prevImage = (e: React.MouseEvent) => {
     e.stopPropagation();
     if (lightboxIndex !== null) {
-      setLightboxIndex((lightboxIndex - 1 + galleryImages.length) % galleryImages.length);
+      setLightboxIndex(
+        (lightboxIndex - 1 + galleryImages.length) % galleryImages.length,
+      );
     }
   };
 
@@ -44,14 +46,12 @@ export default function GallerySection() {
   return (
     <section className="relative px-6 py-12 text-center overflow-hidden bg-[#FFFDF6]">
       <RevealOnScroll direction="down" delay={0.1}>
-        <span className="text-[11px] uppercase tracking-[0.25em] text-[#7A5424] font-semibold">
-          Momen Bahagia
-        </span>
-        <h2 className="font-serif text-2xl font-bold text-[#4D2A00] mt-1 mb-2">
+        <h2 className="font-serif text-4xl font-bold text-[#4D2A00] mt-1 mb-2">
           Our Gallery
         </h2>
         <p className="text-xs italic text-[#7A5424] max-w-[280px] mx-auto mb-8">
-          &ldquo;Loved you yesterday, love you still, always have, always will.&rdquo;
+          &ldquo;Loved you yesterday, love you still, always have, always
+          will.&rdquo;
         </p>
       </RevealOnScroll>
 
@@ -62,7 +62,11 @@ export default function GallerySection() {
             key={idx}
             direction="zoom"
             delay={0.1 + (idx % 4) * 0.1}
-            className={idx === 0 || idx === 7 ? "col-span-2 aspect-[16/10]" : "aspect-[4/5]"}
+            className={
+              idx === 0 || idx === 7
+                ? "col-span-2 aspect-[16/10]"
+                : "aspect-[4/5]"
+            }
           >
             <div
               onClick={() => openLightbox(idx)}

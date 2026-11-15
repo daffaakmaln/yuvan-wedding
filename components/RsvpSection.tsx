@@ -127,25 +127,6 @@ export default function RsvpSection() {
             />
           </div>
 
-          {/* Select RSVP */}
-          <div>
-            <label className="text-xs font-serif font-bold text-[#4D2A00] block mb-1.5">
-              RSVP
-            </label>
-            <div className="relative">
-              <select
-                value={attendance}
-                onChange={(e) => setAttendance(e.target.value as any)}
-                className="w-full appearance-none px-4 py-2.5 text-xs bg-white text-[#4D2A00] rounded-md shadow-sm border border-[#F4D375] focus:outline-none focus:ring-2 focus:ring-[#F2A900] pr-10 cursor-pointer font-serif"
-              >
-                <option value="Hadir">Hadir</option>
-                <option value="Tidak Hadir">Tidak Hadir</option>
-                <option value="Ragu-Ragu">Ragu-Ragu</option>
-              </select>
-              <ChevronDown className="w-4 h-4 text-stone-600 absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none" />
-            </div>
-          </div>
-
           {/* Textarea Ucapan */}
           <div>
             <label className="text-xs font-serif font-bold text-[#4D2A00] block mb-1.5">
